@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #section-comment{
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin: 40px 0;
+        }
+        h2{
+            background-color: brown;
+            color: white;
+            padding: 10px 10px;
+            width: 300px;
+        }
+        .table{
+            background-color: #C4D3F6;
+            padding: 50px 0;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        thead{
+            background-color: #6C7AE0;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        td, th{
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            font-size: 18px;
+            padding: 20px 35px;
+            text-align: left;
+        }
+        tr:hover{
+            background-color: #C4D3F6;
+            color: black;
+        }
+        
+        td:last-child{
+            border-right: 0;
+        }
+        .last-td td{
+            border-bottom: none;
+        }
+        fieldset{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Bat ball --->
+    <h1 id="section-comment">Transform and Transition</h1>
+    <div class="cricket-box">
+        <img src="img/bat.png" class="bat" alt="">
+        <img src="img/ball.png" class="ball" alt="">
+    </div>
+
+
+    <!-- Translate -->
+    <h1 id="section-comment">Transform Box</h1>
+    <section class="trans-box">
+        <div class="box">
+            <div class="inner-box inner-box-1"></div>
+        </div>
+        <div class="box">
+            <div class="inner-box"></div>
+        </div>
+        <div class="box">
+            <div class="inner-box">
+                <div class="box-text"> Box 3 </div>
+            </div>
+        </div>
+    </section>
+<!----  nav   ----->
+    <h1 id="section-comment">Nav</h1>
+<header class="nav">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a>
+                <ul class="dropdown">
+                    <li><a href="">home-1</a></li>
+                    <li><a href="">home-2</a></li>
+                    <li><a href="">home-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ipsam vero suscipit doloribus consectetur aut velit quaerat, obcaecati nesciunt iusto repudiandae est adipisci fuga quis magni amet saepe totam? Sint!</p>
+</header>
+    <!----  HTML5 form     ----->
+<h1 id="section-comment">Form</h1>
+<form action="" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <p><label for="name">Name: <input type="text" name="name" id="name" placeholder="Your Name"></label></p>
+        <p><label for="email">Email: <input type="email" name="email" id="email" placeholder="Your Mail" required></label></p>
+        <P>Country: 
+            <select name="country" id="">
+                <option value="bangladesh">Bangladesh</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="nepal">Nepal</option>
+            </select>
+        </P>
+
+        
+        <fieldset>
+            <legend>Hobby</legend>
+                <p><label for="footbal"><input type="checkbox" name="Hobby" id="footbal">Footbal</label></p>
+                <p><label for="cricket"><input type="checkbox" name="Hobby" id="cricket">Cricket</label></p>
+                <p><label for="golf"><input type="checkbox" name="Hobby" id="golf">Golf</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <p><label for="male"><input type="radio" id="male" name="gender">Male</label></p>
+            <p><label for="female"><input type="radio" id="female" name="gender">Female</label></p>
+        </fieldset>
+        <br>
+        <button type="submit">Submit here</button>
+        <button type="reset">Reset Info</button>
+    </fieldset>
+</form>
+
+
+    <!----  HTML5 Table     ----->
+    <h1 id="section-comment">HTML5 Table</h1>
+    <div class="table">
+<table>
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Age</th>
+            <th>Job Title</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>Vincent Williamson</td>
+        <td>31</td>
+        <td>iOS Developer</td>
+        <td>Sean Guzman</td>
+    </tr>
+    <tr>
+        <td>Joseph Smith</td>
+        <td>27</td>
+        <td>Project Manager</td>
+        <td>Somerville, MA</td>
+    </tr>
+    <tr>
+        <td>Justin Black</td>
+        <td>26</td>
+        <td>Front-End Developer</td>
+        <td>Los Angeles</td>
+    </tr>
+    <tr class="last-td">
+        <td>Sean Guzman</td>
+        <td>25</td>
+        <td>Web Designer</td>
+        <td>San Francisco</td>
+    </tr>
+</table>
+</div>
+    <!----  HTML5 Audio, video     ----->
+    <h1 id="section-comment">HTML5 Audio, video, youtube video, embed iframe</h1>
+    <audio src="https://d6cp9b00-a.akamaihd.net/downloads/ringtones/files/mp3/tere-liye-aaya-mai-to-tere-sang-54199.mp3" controls autoplay muted></audio>
+
+   
+
+    <video src="video/Big-Buck.mp4" width="400" controls ></video>
+
+    <iframe src="https://www.youtube.com/embed/RY9oEd3eyCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!----  HTML5 Semantic tags     ----->
+
+    <h1 id="section-comment">HTML5 Semantic tags section</h1>
+    <Header>
+        <h2>Header</h2>
+    </Header>
+    <nav><h2>nav</h2></nav>
+    <section><h2>section</h2></section>
+    <aside><h2>aside</h2></aside>
+    <article><h2>artical</h2></article>
+    <form action=""><h2>form</h2></form>
+    <section><h2>section</h2></section>
+    <footer><h2>footer</h2></footer>
+
+    
+</body>
+</html>

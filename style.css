@@ -1,0 +1,87 @@
+p{
+    font-size: 18px;
+}
+nav > ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    font-size: 22px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+}
+nav > ul > li > a:hover{
+    background-color: darkcyan;
+    padding: 10px 20px;
+    color: #fff;
+}
+nav > ul > li:hover ul{
+    display: block;
+}
+.dropdown{
+    background-color: dimgrey;
+    padding-left: 0;
+    margin-top: 8px;
+    display: none;
+    position: absolute;
+}
+.dropdown li a{
+    padding: 20px 50px;
+    display: block;
+}
+.dropdown li a:hover{
+    background-color: darkcyan;
+    color: #fff;
+}
+.trans-box{
+    display: flex;
+}
+.box, .inner-box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid springgreen;
+    transition: transform 2s ease-out;
+}
+.inner-box{
+    font-size: 30px;
+    background-color: steelblue;
+    transform: scale(.85);
+    
+}
+.box:hover .inner-box {
+    transform: rotateY(180deg) scale(.90);
+    background-color: tomato;
+}
+.box:hover .box-text{
+    transform: rotateY(180deg);
+}
+.inner-box-1{
+    transform: translate(50px, 100px) scale(.85);
+}
+
+
+.cricket-box{
+    border: 1px solid;
+    position: relative;
+}
+.cricket-box:hover .bat{
+    transform: translate(500px, 0) rotate(0deg);
+    transition: transform .2s ease-out;
+}
+.bat{
+    transform: translate(500px, 0) rotate(60deg);
+    transform-origin: 50% 5%;
+}
+.cricket-box:hover .ball{
+    transform: translate(800px, -250px);
+}
+.ball{
+    width: 50px;
+    position: absolute;
+    top: 363px;
+    left: 535px;
+    transition: transform 2s linear 0.2s;
+}
